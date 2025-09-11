@@ -1,0 +1,1011 @@
+
+<?xml version="1.0"?>
+<JackpotHit
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://IntelligentGaming/ThirdParty/Jackpots">
+	<Jackpot Id="0" Name="Frequent" Value="459.01000000" Active="false" NextEventDateTime="" />
+	<Hit>
+		<Amount>459.01000000</Amount>
+		<AmountPaidOut>459.01000000</AmountPaidOut>
+		<CommunityPrizeValue>0</CommunityPrizeValue>
+		<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+		<Time>2025-04-29T17:06:10.864854</Time>
+		<Machine MachineNumber="3009" CasinoId="3" CasinoName="Vegas Club">
+			<SerialNumber>14</SerialNumber>
+			<Area>Slots</Area>
+			<Bank>BK06</Bank>
+			<Location>3009</Location>
+			<CabinetGameTheme>5 Dragons Deluxe (Hit it hot)</CabinetGameTheme>
+			<MachineManufacturer>Aristocrat</MachineManufacturer>
+		</Machine>
+	</Hit>
+</JackpotHit><
+<?xml version="1.0"?>
+<InformationBroadcast
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" BroadcastRequestDateTime="2025-04-29T17:06:15.037223+07:00" BroadcastSource="APPLICATION" BroadcastVersionIdentifier="4.8.4430.0"
+	xmlns="http://IntelligentGaming/ThirdParty/Jackpots">
+	<JackpotList>
+		<Jackpot Id="0" Name="Frequent" Value="300.1418395000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="1" Name="Daily" Value="5439.0429736700" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="2" Name="Dozen" Value="22572.0221568000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="3" Name="Weekly" Value="51963.7187907400" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="4" Name="Vegas" Value="105492.9099840000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="45" Name="High Limit" Value="11395.5847700000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="34" Name="Daily Golden" Value="10148.9735124100" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="35" Name="Triple" Value="35468.7395290500" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="43" Name="Vegas Spin JP" Value="27397.4168120000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="41" Name="Major Spin JP" Value="855.2026560000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="40" Name="Grand Spin JP" Value="5619.3954050000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+		<Jackpot Id="46" Name="Monthly" Value="106635.9523710000" Active="true" NextEventDateTime="">
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+		</Jackpot>
+	</JackpotList>
+	<LastJackpotHits>
+		<JackpotHit>
+			<Jackpot Id="0" Name="Frequent" Value="459.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>459.01000000</Amount>
+				<AmountPaidOut>459.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T17:06:10.864854</Time>
+				<Machine MachineNumber="3009" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>14</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK06</Bank>
+					<Location>3009</Location>
+					<CabinetGameTheme>5 Dragons Deluxe (Hit it hot)</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="0" Name="Frequent" Value="443.03000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>443.03000000</Amount>
+				<AmountPaidOut>443.03000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T16:31:41.5195722</Time>
+				<Machine MachineNumber="3010" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX138957V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK06</Bank>
+					<Location>3010</Location>
+					<CabinetGameTheme>5 Koi Legends</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="1" Name="Daily" Value="5471.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>5471.01000000</Amount>
+				<AmountPaidOut>5471.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T02:07:47.0403694</Time>
+				<Machine MachineNumber="1023" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX141959V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK03</Bank>
+					<Location>1023</Location>
+					<CabinetGameTheme>5 Dragons Rapid</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="1" Name="Daily" Value="5672.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>5672.01000000</Amount>
+				<AmountPaidOut>5672.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-28T18:43:33.0747718</Time>
+				<Machine MachineNumber="2021" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX138953V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK11</Bank>
+					<Location>2021</Location>
+					<CabinetGameTheme>5 Koi Legends</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="2" Name="Dozen" Value="26674.03000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>26674.03000000</Amount>
+				<AmountPaidOut>26674.03000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-28T22:19:28.6125037</Time>
+				<Machine MachineNumber="2024" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX138950V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK11</Bank>
+					<Location>2024</Location>
+					<CabinetGameTheme>5 Koi Legends</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="2" Name="Dozen" Value="25198.03000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>25198.03000000</Amount>
+				<AmountPaidOut>25198.03000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-27T00:28:15.0425361</Time>
+				<Machine MachineNumber="3025" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX144353V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK06</Bank>
+					<Location>3025</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="3" Name="Weekly" Value="52254.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>52254.01000000</Amount>
+				<AmountPaidOut>52254.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-27T21:56:33.688881</Time>
+				<Machine MachineNumber="2026" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>3014</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK12</Bank>
+					<Location>2026</Location>
+					<CabinetGameTheme>5 Dragons Deluxe</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="3" Name="Weekly" Value="54283.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>54283.01000000</Amount>
+				<AmountPaidOut>54283.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-26T00:32:28.2361086</Time>
+				<Machine MachineNumber="1016" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX148864V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK02</Bank>
+					<Location>1016</Location>
+					<CabinetGameTheme>5 Dragons Riches</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="4" Name="Vegas" Value="103658.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>103658.01000000</Amount>
+				<AmountPaidOut>103658.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-15T20:16:57.579625</Time>
+				<Machine MachineNumber="3018" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>3018</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK07</Bank>
+					<Location>3018</Location>
+					<CabinetGameTheme>5 Dragons Ultra</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="4" Name="Vegas" Value="104140.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>104140.01000000</Amount>
+				<AmountPaidOut>104140.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-06T00:00:02.4433632</Time>
+				<Machine MachineNumber="2004" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX148863V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK10</Bank>
+					<Location>2004</Location>
+					<CabinetGameTheme>5 Koi Legends</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="45" Name="High Limit" Value="13728.09000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>13728.09000000</Amount>
+				<AmountPaidOut>13728.09000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-27T23:13:11.8758444</Time>
+				<Machine MachineNumber="2006" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX148871V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK10</Bank>
+					<Location>2006</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="45" Name="High Limit" Value="11943.02000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>11943.02000000</Amount>
+				<AmountPaidOut>11943.02000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-24T15:27:22.3858277</Time>
+				<Machine MachineNumber="2001" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX135140V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK10</Bank>
+					<Location>2001</Location>
+					<CabinetGameTheme>5 Dragons Deluxe</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="34" Name="Daily Golden" Value="10352.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>10352.01000000</Amount>
+				<AmountPaidOut>10352.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T13:36:01.0230886</Time>
+				<Machine MachineNumber="3002" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX144359V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK05</Bank>
+					<Location>3002</Location>
+					<CabinetGameTheme>5 Dragons Riches</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="34" Name="Daily Golden" Value="10902.02000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>10902.02000000</Amount>
+				<AmountPaidOut>10902.02000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T00:52:48.7635987</Time>
+				<Machine MachineNumber="3002" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX144359V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK05</Bank>
+					<Location>3002</Location>
+					<CabinetGameTheme>5 Dragons Riches</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="35" Name="Triple" Value="33227.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>33227.01000000</Amount>
+				<AmountPaidOut>33227.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-24T23:30:31.8327093</Time>
+				<Machine MachineNumber="1030" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX144356V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK04</Bank>
+					<Location>1030</Location>
+					<CabinetGameTheme>5 Dragons Riches</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="35" Name="Triple" Value="34147.04000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>34147.04000000</Amount>
+				<AmountPaidOut>34147.04000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-21T20:20:42.5542367</Time>
+				<Machine MachineNumber="2007" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>DX148872V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK10</Bank>
+					<Location>2007</Location>
+					<CabinetGameTheme>5 Dragons Deluxe</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="43" Name="Vegas Spin JP" Value="28013.12000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>28013.12000000</Amount>
+				<AmountPaidOut>28013.12000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-02-02T21:11:10.8808373</Time>
+				<Machine MachineNumber="303" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>310</SerialNumber>
+					<Area>Roulette 2</Area>
+					<Bank>BR03</Bank>
+					<Location>303</Location>
+					<CabinetGameTheme>Zone C</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="43" Name="Vegas Spin JP" Value="29415.09000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>29415.09000000</Amount>
+				<AmountPaidOut>29415.09000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2024-11-06T15:55:07.4310106</Time>
+				<Machine MachineNumber="307" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>306</SerialNumber>
+					<Area>Roulette 2</Area>
+					<Bank>BR03</Bank>
+					<Location>307</Location>
+					<CabinetGameTheme>Zone C</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="41" Name="Major Spin JP" Value="889.02000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>889.02000000</Amount>
+				<AmountPaidOut>889.02000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-28T00:39:29.3140257</Time>
+				<Machine MachineNumber="230" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>207</SerialNumber>
+					<Area>Roulette</Area>
+					<Bank>BR02</Bank>
+					<Location>230</Location>
+					<CabinetGameTheme>Zone B</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="41" Name="Major Spin JP" Value="786.02000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>786.02000000</Amount>
+				<AmountPaidOut>786.02000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-26T21:42:16.7562532</Time>
+				<Machine MachineNumber="501" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>501</SerialNumber>
+					<Area>Tables BAC</Area>
+					<Bank>BT09</Bank>
+					<Location>501</Location>
+					<CabinetGameTheme>Zone D</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="40" Name="Grand Spin JP" Value="5733.03000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>5733.03000000</Amount>
+				<AmountPaidOut>5733.03000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-03-30T13:29:20.5584355</Time>
+				<Machine MachineNumber="231" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>206</SerialNumber>
+					<Area>Roulette</Area>
+					<Bank>BR02</Bank>
+					<Location>231</Location>
+					<CabinetGameTheme>Zone B</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+		<JackpotHit>
+			<Jackpot Id="40" Name="Grand Spin JP" Value="5175.01000000" Active="false" NextEventDateTime="" />
+			<Hit>
+				<Amount>5175.01000000</Amount>
+				<AmountPaidOut>5175.01000000</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-02-24T21:43:04.0459068</Time>
+				<Machine MachineNumber="229" CasinoId="3" CasinoName="Vegas Club">
+					<SerialNumber>208</SerialNumber>
+					<Area>Roulette</Area>
+					<Bank>BR02</Bank>
+					<Location>229</Location>
+					<CabinetGameTheme>Zone B</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</JackpotHit>
+	</LastJackpotHits>
+	<HotSeatList>
+		<HotSeatInformation>
+			<Id>88</Id>
+			<Name>1000 - July 2022 - 1st</Name>
+			<StartDate>2025-03-07T00:00:00</StartDate>
+			<EndDate>2025-05-08T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Wednesday</DayOfWeek>
+					<StartHour>18</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>21</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>89</Id>
+			<Name>1000 - July 2022 - 2nd</Name>
+			<StartDate>2025-03-06T00:00:00</StartDate>
+			<EndDate>2025-05-09T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Wednesday</DayOfWeek>
+					<StartHour>21</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>0</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>80</Id>
+			<Name>777 - JAN 2022 - 13 times - 1st</Name>
+			<StartDate>2025-04-07T00:00:00</StartDate>
+			<EndDate>2025-05-14T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Sunday</DayOfWeek>
+					<StartHour>15</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>17</EndHour>
+					<EndMinute>30</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>81</Id>
+			<Name>777- JAN 2022 - 13 times - 2nd</Name>
+			<StartDate>2025-04-01T00:00:00</StartDate>
+			<EndDate>2025-05-13T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Sunday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>30</StartMinute>
+					<EndHour>20</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>119</Id>
+			<Name>NEW PPOCHI 20_SL</Name>
+			<StartDate>2025-03-27T00:00:00</StartDate>
+			<EndDate>2025-05-03T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Monday</DayOfWeek>
+					<StartHour>20</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Tuesday</DayOfWeek>
+					<StartHour>20</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Wednesday</DayOfWeek>
+					<StartHour>20</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Thursday</DayOfWeek>
+					<StartHour>20</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Saturday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>22</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Sunday</DayOfWeek>
+					<StartHour>16</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>21</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>98</Id>
+			<Name>Ppochi 2024 - SAT-SUN 33 times (16-2)</Name>
+			<StartDate>2025-04-01T00:00:00</StartDate>
+			<EndDate>2025-05-13T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Saturday</DayOfWeek>
+					<StartHour>14</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Sunday</DayOfWeek>
+					<StartHour>14</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>97</Id>
+			<Name>Ppochi 2024 -Mon-Fri-18 times (16-2)</Name>
+			<StartDate>2025-04-02T00:00:00</StartDate>
+			<EndDate>2025-05-03T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Monday</DayOfWeek>
+					<StartHour>19</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Tuesday</DayOfWeek>
+					<StartHour>19</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Wednesday</DayOfWeek>
+					<StartHour>19</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Thursday</DayOfWeek>
+					<StartHour>19</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Friday</DayOfWeek>
+					<StartHour>19</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+		<HotSeatInformation>
+			<Id>109</Id>
+			<Name>RL_PPOCHI 20</Name>
+			<StartDate>2025-03-28T00:00:00</StartDate>
+			<EndDate>2025-05-03T00:00:00</EndDate>
+			<CasinoList>
+				<Casino>
+					<Id>3</Id>
+					<Name>Vegas Club</Name>
+					<OpeningHour>6</OpeningHour>
+					<ClosingHour>6</ClosingHour>
+				</Casino>
+			</CasinoList>
+			<Schedule>
+				<ScheduleDay>
+					<DayOfWeek>Monday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Tuesday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Thursday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Friday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+				<ScheduleDay>
+					<DayOfWeek>Saturday</DayOfWeek>
+					<StartHour>17</StartHour>
+					<StartMinute>0</StartMinute>
+					<EndHour>1</EndHour>
+					<EndMinute>0</EndMinute>
+				</ScheduleDay>
+			</Schedule>
+		</HotSeatInformation>
+	</HotSeatList>
+	<LastHotSeatHits>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>88</Id>
+				<PromotionName>1000 - July 2022 - 1st</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-23T20:52:03.3397145</Time>
+				<Machine MachineNumber="1013" CasinoId="0">
+					<SerialNumber>DX148870V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK02</Bank>
+					<Location>1013</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>89</Id>
+				<PromotionName>1000 - July 2022 - 2nd</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-23T23:58:02.8264506</Time>
+				<Machine MachineNumber="2024" CasinoId="0">
+					<SerialNumber>DX138950V</SerialNumber>
+					<Area>Slots 2</Area>
+					<Bank>BK11</Bank>
+					<Location>2024</Location>
+					<CabinetGameTheme>5 Koi Legends</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>80</Id>
+				<PromotionName>777 - JAN 2022 - 13 times - 1st</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-27T17:15:02.6086311</Time>
+				<Machine MachineNumber="1028" CasinoId="0">
+					<SerialNumber>DX144360V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK04</Bank>
+					<Location>1028</Location>
+					<CabinetGameTheme>9 Princes of Dragon King-Tiger</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>81</Id>
+				<PromotionName>777- JAN 2022 - 13 times - 2nd</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-27T19:53:03.326495</Time>
+				<Machine MachineNumber="3008" CasinoId="0">
+					<SerialNumber>3008</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK06</Bank>
+					<Location>3008</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>119</Id>
+				<PromotionName>NEW PPOCHI 20_SL</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T00:06:03.0857562</Time>
+				<Machine MachineNumber="1020" CasinoId="0">
+					<SerialNumber>158662</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK03</Bank>
+					<Location>1020</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>98</Id>
+				<PromotionName>Ppochi 2024 - SAT-SUN 33 times (16-2)</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-28T00:55:01.8964434</Time>
+				<Machine MachineNumber="1025" CasinoId="0">
+					<SerialNumber>DX144351V</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK04</Bank>
+					<Location>1025</Location>
+					<CabinetGameTheme>5 Dragons Pearls</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>97</Id>
+				<PromotionName>Ppochi 2024 -Mon-Fri-18 times (16-2)</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T00:50:02.0292433</Time>
+				<Machine MachineNumber="3017" CasinoId="0">
+					<SerialNumber>3017</SerialNumber>
+					<Area>Slots</Area>
+					<Bank>BK07</Bank>
+					<Location>3017</Location>
+					<CabinetGameTheme>5 Dragons Riches</CabinetGameTheme>
+					<MachineManufacturer>Aristocrat</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+		<HotSeatHit>
+			<HotSeat>
+				<Id>109</Id>
+				<PromotionName>RL_PPOCHI 20</PromotionName>
+				<CasinoName>Vegas Club</CasinoName>
+			</HotSeat>
+			<Hit>
+				<Amount>0</Amount>
+				<AmountPaidOut>0</AmountPaidOut>
+				<CommunityPrizeValue>0</CommunityPrizeValue>
+				<CommunityPrizeAwardCount>0</CommunityPrizeAwardCount>
+				<Time>2025-04-29T00:13:02.5158732</Time>
+				<Machine MachineNumber="504" CasinoId="0">
+					<SerialNumber>904</SerialNumber>
+					<Area>Tables BAC</Area>
+					<Bank>BT09</Bank>
+					<Location>504</Location>
+					<CabinetGameTheme>Zone D</CabinetGameTheme>
+					<MachineManufacturer>Interblock</MachineManufacturer>
+				</Machine>
+			</Hit>
+		</HotSeatHit>
+	</LastHotSeatHits>
+</InformationBroadcast>

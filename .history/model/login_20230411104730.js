@@ -1,0 +1,31 @@
+var mongoose = require('mongoose');
+
+const LoginSchema = new mongoose.Schema({
+    number: {
+        required: true,
+        type: Number,
+    },
+    name: {
+        required: true,
+        type: String,
+    },
+    loginCount : {
+        required: true,
+        type:Number,
+    },
+    lastUpdate: {
+        // required:true,
+        type: Date,
+    },
+    newUpdate: {
+        // required:true,
+        default: Date.now(),
+        type: Date,
+    },
+},{
+    timestamps: true,
+    collection: "users",
+})
+
+const Logins = mongoose.model("logins", LoginSchema);
+module.exports = Logins;

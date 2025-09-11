@@ -1,0 +1,148 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetHospitalityItemsResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <GetHospitalityItemsResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+                <a:Items>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>true</a:FixedPrice>
+                        <a:Id>10</a:Id>
+                        <a:Name>Draw Ticket</a:Name>
+                        <a:Redeemable>true</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>true</a:FixedPrice>
+                        <a:Id>11</a:Id>
+                        <a:Name>GR -Spa Voucher</a:Name>
+                        <a:Redeemable>true</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>false</a:FixedPrice>
+                        <a:Id>13</a:Id>
+                        <a:Name>MKT - iPhone</a:Name>
+                        <a:Redeemable>false</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>false</a:FixedPrice>
+                        <a:Id>20</a:Id>
+                        <a:Name>MKT - Birthday gift</a:Name>
+                        <a:Redeemable>false</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>false</a:FixedPrice>
+                        <a:Id>21</a:Id>
+                        <a:Name>Car Services</a:Name>
+                        <a:Redeemable>false</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>true</a:FixedPrice>
+                        <a:Id>28</a:Id>
+                        <a:Name>$50 Test</a:Name>
+                        <a:Redeemable>true</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>true</a:FixedPrice>
+                        <a:Id>31</a:Id>
+                        <a:Name>1 Drink 500 Comp Points</a:Name>
+                        <a:Redeemable>true</a:Redeemable>
+                    </a:HospitalityItem>
+                    <a:HospitalityItem>
+                        <a:FixedPrice>true</a:FixedPrice>
+                        <a:Id>32</a:Id>
+                        <a:Name>1$ Hospitality Test</a:Name>
+                        <a:Redeemable>false</a:Redeemable>
+                    </a:HospitalityItem>
+                </a:Items>
+            </GetHospitalityItemsResult>
+        </GetHospitalityItemsResponse>
+    </s:Body>
+</s:Envelope>
+customer in casino
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetCasinosResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <GetCasinosResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+                <a:Casinos>
+                    <a:Casino>
+                        <a:Id>3</a:Id>
+                        <a:Name>Vegas Club</a:Name>
+                    </a:Casino>
+                </a:Casinos>
+            </GetCasinosResult>
+        </GetCasinosResponse>
+    </s:Body>
+</s:Envelope>
+
+
+
+
+customer data:
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <FindCustomersResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <FindCustomersResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+                <a:Customers>
+                    <a:CustomerData>
+                        <a:Age>48</a:Age>
+                        <a:CardNumber>10033965</a:CardNumber>
+                        <a:CashlessBalance>0</a:CashlessBalance>
+                        <a:Colour>16744448</a:Colour>
+                        <a:ColourHTML>#0080FF</a:ColourHTML>
+                        <a:CompBalance>0</a:CompBalance>
+                        <a:CompStatusColour>16777215</a:CompStatusColour>
+                        <a:CompStatusColourHTML>Transparent</a:CompStatusColourHTML>
+                        <a:Forename>Techeeka Nicole</a:Forename>
+                        <a:FreeplayBalance>0</a:FreeplayBalance>
+                        <a:Gender>Female</a:Gender>
+                        <a:HasOnlineAccount>false</a:HasOnlineAccount>
+                        <a:HideCompBalance>false</a:HideCompBalance>
+                        <a:IsGuest>false</a:IsGuest>
+                        <a:LoyaltyBalance>0</a:LoyaltyBalance>
+                        <a:LoyaltyPointsAvailable>0</a:LoyaltyPointsAvailable>
+                        <a:MembershipTypeName>P</a:MembershipTypeName>
+                        <a:MiddleName/>
+                        <a:Number>55281</a:Number>
+                        <a:PlayerTierName>P</a:PlayerTierName>
+                        <a:PlayerTierShortCode/>
+                        <a:PremiumPlayer>false</a:PremiumPlayer>
+                        <a:Surname>Johnson</a:Surname>
+                        <a:Title>Miss</a:Title>
+                        <a:ValidMembership>true</a:ValidMembership>
+                    </a:CustomerData>
+                    <a:CustomerData>
+                        <a:Age>34</a:Age>
+                        <a:CardNumber>10000001</a:CardNumber>
+                        <a:CashlessBalance>83.8000</a:CashlessBalance>
+                        <a:Colour>16777215</a:Colour>
+                        <a:ColourHTML>White</a:ColourHTML>
+                        <a:CompBalance>-60</a:CompBalance>
+                        <a:CompStatusColour>16777215</a:CompStatusColour>
+                        <a:CompStatusColourHTML>Transparent</a:CompStatusColourHTML>
+                        <a:Forename>Tech</a:Forename>
+                        <a:FreeplayBalance>582.0000</a:FreeplayBalance>
+                        <a:Gender>Male</a:Gender>
+                        <a:HasOnlineAccount>false</a:HasOnlineAccount>
+                        <a:HideCompBalance>false</a:HideCompBalance>
+                        <a:IsGuest>false</a:IsGuest>
+                        <a:LoyaltyBalance>201.28</a:LoyaltyBalance>
+                        <a:LoyaltyPointsAvailable>20128</a:LoyaltyPointsAvailable>
+                        <a:MembershipTypeName>Test</a:MembershipTypeName>
+                        <a:MiddleName/>
+                        <a:Number>21151</a:Number>
+                        <a:PlayerTierName>P</a:PlayerTierName>
+                        <a:PlayerTierShortCode/>
+                        <a:PremiumPlayer>true</a:PremiumPlayer>
+                        <a:Surname>Leader</a:Surname>
+                        <a:Title>Mr</a:Title>
+                        <a:ValidMembership>true</a:ValidMembership>
+                    </a:CustomerData>
+                </a:Customers>
+            </FindCustomersResult>
+        </FindCustomersResponse>
+    </s:Body>
+</s:Envelope>

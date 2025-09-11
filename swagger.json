@@ -1,0 +1,881 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "checklist APIs ",
+    "description": "docs for checklist APIs",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8081",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Machines",
+      "description": "API for machines"
+    },
+    {
+      "name": "TimePeriods",
+      "description": "API for timeperiods"
+    },
+    {
+      "name": "Reports",
+      "description": "API for report"
+    },
+
+    {
+      "name": "Users",
+      "description": "API for users"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/list_machine": {
+      "get": {
+        "tags": ["Machines"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "get list of machine successfull"
+          }
+        }
+      }
+    },
+    "/list_machine_type": {
+      "post": {
+        "tags": ["Machines"],
+        "parameters": [
+          {
+            "name": "type",
+            "default": "slot",
+            "in": "body",
+            "required": true,
+            "description": "type of machine string ['slot','rl','bc','bj']",
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/MachineType"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "get list of machine successfull"
+          }
+        }
+      }
+    },
+    "/delete_machine": {
+      "delete": {
+        "tags": ["Machines"],
+        "parameters": [
+          {
+            "name": "machine_number",
+            "in": "body",
+            "required": true,
+            "description": "delete machine number by id",
+            "type": "integer",
+            "enum": [0, 1, 2],
+            "default": 1,
+            "schema": { "$ref": "#/definitions/MachineNumber" }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "delete machine by ID successfull"
+          }
+        }
+      }
+    },
+    "/create_machine": {
+      "post": {
+        "tags": ["Machines"],
+        "parameters": [
+          {
+            "name": "machine_create_model",
+            "in": "body",
+            "required": true,
+            "description": "model of machine create",
+            "schema": {
+              "$ref": "#/definitions/MachineCreate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "create machine machine successfull"
+          }
+        }
+      }
+    },
+    "/update_machine": {
+      "put": {
+        "tags": ["Machines"],
+        "parameters": [
+          {
+            "name": "machine_update_model",
+            "in": "body",
+            "required": true,
+            "description": "model of machine update",
+            "schema": {
+              "$ref": "#/definitions/MachineUpdate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "update machine by ID successfull"
+          }
+        }
+      }
+    },
+    "/find_reports": {
+      "get": {
+        "tags": ["Reports"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "list of all reports successfull"
+          }
+        }
+      }
+    },
+    "/create_report": {
+      "post": {
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report_model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReportUpdate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "create report successfull"
+          }
+        }
+      }
+    },
+    "/find_report": {
+      "post": {
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report_model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReportFind"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "find report by name,machine_number,date successfull"
+          }
+        }
+      }
+    },
+    "/find_report_date": {
+      "post": {
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report_model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReportFindDate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "find report within date successfull"
+          }
+        }
+      }
+    },
+    "/update_report": {
+      "put": {
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report_model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReportUpdate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "update report successfull"
+          }
+        }
+      }
+    },
+    "/delete_report": {
+      "delete": {
+        "tags": ["Reports"],
+        "parameters": [
+          {
+            "name": "report_model",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReportFind"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "delete report successfull"
+          }
+        }
+      }
+    },
+
+    "/list_time_period": {
+      "get": {
+        "tags": ["TimePeriods"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "list time period successfull"
+          }
+        }
+      }
+    },
+    "/create_time_period": {
+      "post": {
+        "tags": ["TimePeriods"],
+        "parameters": [
+          {
+            "name": "machine_create_model",
+            "in": "body",
+            "required": true,
+            "description": "model of machine create",
+            "schema": {
+              "$ref": "#/definitions/TimePeriod"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "create timeperiod successfull"
+          }
+        }
+      }
+    },
+
+    "/find_one": {
+      "post": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user_find_model",
+            "in": "body",
+            "required": true,
+            "description": "user find by name & pass model",
+            "schema": {
+              "$ref": "#/definitions/UserFind"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "get user by name & pass successfull"
+          }
+        }
+      }
+    },
+    "/find_all": {
+      "get": {
+        "tags": ["Users"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "get all user  successfull"
+          }
+        }
+      }
+    },
+    "/create_user": {
+      "post": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user_create_model",
+            "in": "body",
+            "required": true,
+            "description": "user create",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "create user  successfull"
+          }
+        }
+      }
+    },
+    "/update_user_id": {
+      "put": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user_update_model",
+            "in": "body",
+            "required": true,
+            "description": "user update",
+            "schema": {
+              "$ref": "#/definitions/UserUpdate"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "update user successfull"
+          }
+        }
+      }
+    },
+    "/delete_user_id": {
+      "delete": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user_delete_model",
+            "in": "body",
+            "required": true,
+            "description": "user delete",
+            "schema": {
+              "$ref": "#/definitions/UserDeleteID"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "delete user by id successfull"
+          }
+        }
+      }
+    },
+    "/delete_user_name": {
+      "delete": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user_delete_model",
+            "in": "body",
+            "required": true,
+            "description": "user delete",
+            "schema": {
+              "$ref": "#/definitions/UserDeleteName"
+            }
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "delete user by name successfull"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "MachineNumber": {
+      "properties": {
+        "machine_number": {
+          "type": "integer",
+          "default": 1000
+        }
+      }
+    },
+    "TimePeriod": {
+      "required": ["id", "name", "status", "startDate", "endDate"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": 1000
+        },
+        "name": { "type": "string", "default": "7,8,9 report" },
+        "status": { "type": "boolean", "default": true },
+        "startDate": { "type": "string", "default": "2023-01-01" },
+        "endDate": { "type": "string", "default": "2023-04-01" }
+      }
+    },
+    "MachineType": {
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "slot"
+        }
+      }
+    },
+    "MachineCreate": {
+      "required": ["machine_name", "machine_number", "type", "list"],
+      "properties": {
+        "machine_name": {
+          "type": "string",
+          "default": "slot"
+        },
+        "machine_number": {
+          "type": "integer",
+          "default": 1
+        },
+        "type": {
+          "type": "string",
+          "default": "slot"
+        },
+        "list": {
+          "type": "list",
+          "default": []
+        }
+      }
+    },
+
+    "MachineUpdate": {
+      "required": ["machine_number", "type", "list"],
+      "properties": {
+        "machine_number": {
+          "type": "integer",
+          "default": 1
+        },
+        "list": {
+          "type": "list",
+          "$ref": "#/definitions/MachineChild",
+          "default": []
+        }
+      }
+    },
+    "MachineChild": {
+      "required": ["name", "date", "status"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "thomas"
+        },
+        "date": {
+          "type": "string",
+          "default": "2022-08-08"
+        },
+        "status": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "Machine": {
+      "required": ["customer_number", "date"],
+      "properties": {
+        "customer_number": {
+          "type": "integer",
+          "default": 1
+        },
+        "date": {
+          "type": "string",
+          "default": "2022-08-08"
+        }
+      }
+    },
+    "UserFind": {
+      "required": ["name", "pass"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "thomas"
+        },
+        "pass": {
+          "type": "string",
+          "default": "12345"
+        }
+      }
+    },
+    "UserUpdate": {
+      "required": ["name", "id"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "thomas"
+        },
+        "id": {
+          "type": "string",
+          "default": "1"
+        }
+      }
+    },
+    "UserDeleteID": {
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "default": "100"
+        }
+      }
+    },
+    "UserDeleteName": {
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "thomass"
+        }
+      }
+    },
+    "ReportFindDate": {
+      "required": ["date"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "default": "2022-08-29"
+        }
+      }
+    },
+    "ReportFind": {
+      "properties": {
+        "date": {
+          "type": "string",
+          "default": "2022-08-29"
+        },
+        "name": {
+          "type": "string",
+          "default": "tom"
+        },
+        "machine": {
+          "type": "string",
+          "default": "44"
+        }
+      }
+    },
+    "ReportUpdate": {
+      "properties": {
+        "date": {
+          "type": "string",
+          "default": "2022-08-29"
+        },
+        "name": {
+          "type": "string",
+          "default": "testing"
+        },
+        "name_sub": {
+          "type": "string",
+          "default": "testing_sub"
+        },
+        "machine": {
+          "type": "string",
+          "default": "1000"
+        },
+        "time_created": {
+          "type": "string",
+          "default": "07:00"
+        },
+        "time_start": {
+          "type": "string",
+          "default": "07:00"
+        },
+        "time_end": {
+          "type": "string",
+          "default": "12:00"
+        },
+        "serial": {
+          "type": "string",
+          "default": "123"
+        },
+        "game_theme": {
+          "type": "string",
+          "default": "dragon"
+        },
+        "vendor": {
+          "type": "string",
+          "default": "112233445566778899"
+        },
+        "money_receive": {
+          "type": "string",
+          "default": "1000"
+        },
+        "money_return": {
+          "type": "string",
+          "default": "1000"
+        },
+        "test_step": {
+          "type": "list",
+          "$ref": "#/definitions/TestStep",
+          "default": []
+        },
+        "check_step": {
+          "type": "list",
+          "$ref": "#/definitions/CheckStep",
+          "default": []
+        },
+        "finish_step": {
+          "type": "list",
+          "$ref": "#/definitions/FinishStep",
+          "default": []
+        },
+        "check_bond": {
+          "type": "list",
+          "$ref": "#/definitions/CheckBond",
+          "default": []
+        },
+        "check_after_maintain": {
+          "type": "list",
+          "$ref": "#/definitions/CheckAfterMaintain",
+          "default": []
+        },
+        "list_clean": {
+          "type": "list",
+          "$ref": "#/definitions/ListClean"
+        }
+      }
+    },
+    "TestStep": {
+      "properties": {
+        "step_1": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_2": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_3": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_4": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_5": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_6": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_7": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+
+
+    "CheckStep": {
+      "properties": {
+        "step_1": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_2": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_3": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_4": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "FinishStep": {
+      "properties": {
+        "step_1": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "step_2": {
+          "type": "boolean",
+          "default": "false"
+        },
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "CheckBond": {
+      "properties": {
+        "step_1": {
+          "machine_status": "integer",
+          "default": 0
+        },
+        "device_status": {
+          "type": "integer",
+          "default": 0
+        },
+        "main_monitor": {
+          "type": "integer",
+          "default": 0
+        },
+        "top_monitor": {
+          "type": "integer",
+          "default": 0
+        },
+        "topper_monitor": {
+          "type": "integer",
+          "default": 0
+        },
+        "touch_sensor": {
+          "type": "integer",
+          "default": 0
+        },
+        "button": {
+          "type": "integer",
+          "default": 0
+        },
+        "key_lock": {
+          "type": "integer",
+          "default": 0
+        },
+        "system": {
+          "type": "integer",
+          "default": 0
+        } ,
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "CheckAfterMaintain": {
+       "properties": {
+        "touch_button": {
+          "type": "integer",
+          "default": 0
+        },
+        "button": {
+          "type": "integer",
+          "default": 0
+        },
+        "ticket_printer": {
+          "type": "integer",
+          "default": 0
+        },
+        "bill_acceptor": {
+          "type": "integer",
+          "default": 0
+        },
+        "power_supply": {
+          "type": "integer",
+          "default": 0
+        },
+        "system": {
+          "type": "integer",
+          "default": 0
+        } ,
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "ListClean": {
+       "properties": {
+        "inside_cabine": {
+          "type": "boolean",
+          "default": false
+        },
+        "cashbox_cabine": {
+          "type": "boolean",
+          "default": false
+        },
+        "top_monitor": {
+          "type": "boolean",
+          "default": false
+        },
+        "power_supply": {
+          "type": "boolean",
+          "default": false
+        },
+        "cabling": {
+          "type": "boolean",
+          "default": false
+        },
+        "ticket_printer": {
+          "type": "boolean",
+          "default": false
+        },
+        "glass_touch": {
+          "type": "boolean",
+          "default": false
+        },
+        "main_board": {
+          "type": "boolean",
+          "default": false
+        },
+        "fan": {
+          "type": "boolean",
+          "default": false
+        },
+        "neon_kit": {
+          "type": "boolean",
+          "default": false
+        },
+        "bill_acceptor": {
+          "type": "boolean",
+          "default": false
+        },
+        "main_monitor": {
+          "type": "boolean",
+          "default": false
+        },
+        "button_panel": {
+          "type": "boolean",
+          "default": false
+        },
+        "comment": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+
+
+
+
+
+
+
+  }
+}

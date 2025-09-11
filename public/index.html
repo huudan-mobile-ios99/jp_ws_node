@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Club Jackpot Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-8">Vegas Club Jackpot Data</h1>
+        <p class="text-center text-gray-600 mb-4" id="broadcast-datetime">Broadcast DateTime: Loading...</p>
+
+        <!-- Jackpot List (Static Placeholder) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Jackpot List</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2 px-4 text-left">ID</th>
+                            <th class="py-2 px-4 text-left">Name</th>
+                            <th class="py-2 px-4 text-left">Value</th>
+                            <th class="py-2 px-4 text-left">Active</th>
+                            <th class="py-2 px-4 text-left">Casino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">0</td>
+                            <td class="py-2 px-4">Frequent</td>
+                            <td class="py-2 px-4">376.92</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">1</td>
+                            <td class="py-2 px-4">Daily</td>
+                            <td class="py-2 px-4">5109.72</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">2</td>
+                            <td class="py-2 px-4">Dozen</td>
+                            <td class="py-2 px-4">27462.55</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">3</td>
+                            <td class="py-2 px-4">Weekly</td>
+                            <td class="py-2 px-4">55309.67</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">4</td>
+                            <td class="py-2 px-4">Vegas</td>
+                            <td class="py-2 px-4">106293.66</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">45</td>
+                            <td class="py-2 px-4">High Limit</td>
+                            <td class="py-2 px-4">10791.03</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">34</td>
+                            <td class="py-2 px-4">Daily Golden</td>
+                            <td class="py-2 px-4">10382.83</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">35</td>
+                            <td class="py-2 px-4">Triple</td>
+                            <td class="py-2 px-4">30005.16</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">43</td>
+                            <td class="py-2 px-4">Vegas Spin JP</td>
+                            <td class="py-2 px-4">27450.90</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">41</td>
+                            <td class="py-2 px-4">Major Spin JP</td>
+                            <td class="py-2 px-4">858.82</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">40</td>
+                            <td class="py-2 px-4">Grand Spin JP</td>
+                            <td class="py-2 px-4">5669.22</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">46</td>
+                            <td class="py-2 px-4">Monthly</td>
+                            <td class="py-2 px-4">105215.66</td>
+                            <td class="py-2 px-4">Yes</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Last Jackpot Hits (Dynamic) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Last Jackpot Hits</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2 px-4 text-left">Jackpot ID</th>
+                            <th class="py-2 px-4 text-left">Name</th>
+                            <th class="py-2 px-4 text-left">Amount</th>
+                            <th class="py-2 px-4 text-left">Time</th>
+                            <th class="py-2 px-4 text-left">Machine Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jackpot-hits-table">
+                        <!-- Rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Hot Seat List (Static Placeholder) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Hot Seat List</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2 px-4 text-left">ID</th>
+                            <th class="py-2 px-4 text-left">Name</th>
+                            <th class="py-2 px-4 text-left">Start Date</th>
+                            <th class="py-2 px-4 text-left">End Date</th>
+                            <th class="py-2 px-4 text-left">Schedule</th>
+                            <th class="py-2 px-4 text-left">Casino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">88</td>
+                            <td class="py-2 px-4">1000 - July 2022 - 1st</td>
+                            <td class="py-2 px-4">2025-03-07</td>
+                            <td class="py-2 px-4">2025-05-08</td>
+                            <td class="py-2 px-4">Wednesday 18:00-21:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">89</td>
+                            <td class="py-2 px-4">1000 - July 2022 - 2nd</td>
+                            <td class="py-2 px-4">2025-03-06</td>
+                            <td class="py-2 px-4">2025-05-09</td>
+                            <td class="py-2 px-4">Wednesday 21:00-00:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">80</td>
+                            <td class="py-2 px-4">777 - JAN 2022 - 13 times - 1st</td>
+                            <td class="py-2 px-4">2025-04-07</td>
+                            <td class="py-2 px-4">2025-05-14</td>
+                            <td class="py-2 px-4">Sunday 15:00-17:30</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">81</td>
+                            <td class="py-2 px-4">777- JAN 2022 - 13 times - 2nd</td>
+                            <td class="py-2 px-4">2025-04-01</td>
+                            <td class="py-2 px-4">2025-05-13</td>
+                            <td class="py-2 px-4">Sunday 17:30-20:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">119</td>
+                            <td class="py-2 px-4">NEW PPOCHI 20_SL</td>
+                            <td class="py-2 px-4">2025-03-27</td>
+                            <td class="py-2 px-4">2025-05-03</td>
+                            <td class="py-2 px-4">Mon,Tue,Wed,Thu 20:00-01:00; Sat 17:00-22:00; Sun 16:00-21:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">98</td>
+                            <td class="py-2 px-4">Ppochi 2024 - SAT-SUN 33 times (16-2)</td>
+                            <td class="py-2 px-4">2025-04-01</td>
+                            <td class="py-2 px-4">2025-05-13</td>
+                            <td class="py-2 px-4">Sat,Sun 14:00-01:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">97</td>
+                            <td class="py-2 px-4">Ppochi 2024 -Mon-Fri-18 times (16-2)</td>
+                            <td class="py-2 px-4">2025-04-02</td>
+                            <td class="py-2 px-4">2025-05-03</td>
+                            <td class="py-2 px-4">Mon,Tue,Wed,Thu,Fri 19:00-01:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">109</td>
+                            <td class="py-2 px-4">RL_PPOCHI 20</td>
+                            <td class="py-2 px-4">2025-03-28</td>
+                            <td class="py-2 px-4">2025-05-03</td>
+                            <td class="py-2 px-4">Mon,Tue,Thu,Fri,Sat 17:00-01:00</td>
+                            <td class="py-2 px-4">Vegas Club (ID: 3)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Last Hot Seat Hits (Static Placeholder) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Last Hot Seat Hits</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2 px-4 text-left">Hot Seat ID</th>
+                            <th class="py-2 px-4 text-left">Promotion Name</th>
+                            <th class="py-2 px-4 text-left">Time</th>
+                            <th class="py-2 px-4 text-left">Machine Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">88</td>
+                            <td class="py-2 px-4">1000 - July 2022 - 1st</td>
+                            <td class="py-2 px-4">2025-04-30 21:00:04</td>
+                            <td class="py-2 px-4">Machine #108, Serial: 108, Area: Roulette, Bank: BR01, Game: Zone A, Manufacturer: Interblock</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">89</td>
+                            <td class="py-2 px-4">1000 - July 2022 - 2nd</td>
+                            <td class="py-2 px-4">2025-04-30 23:58:03</td>
+                            <td class="py-2 px-4">Machine #3009, Serial: 14, Area: Slots, Bank: BK06, Game: 5 Dragons Deluxe (Hit it hot), Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">80</td>
+                            <td class="py-2 px-4">777 - JAN 2022 - 13 times - 1st</td>
+                            <td class="py-2 px-4">2025-04-27 17:15:02</td>
+                            <td class="py-2 px-4">Machine #1028, Serial: DX144360V, Area: Slots, Bank: BK04, Game: 9 Princes of Dragon King-Tiger, Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">81</td>
+                            <td class="py-2 px-4">777- JAN 2022 - 13 times - 2nd</td>
+                            <td class="py-2 px-4">2025-04-27 19:53:03</td>
+                            <td class="py-2 px-4">Machine #3008, Serial: 3008, Area: Slots, Bank: BK06, Game: 5 Dragons Pearls, Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">119</td>
+                            <td class="py-2 px-4">NEW PPOCHI 20_SL</td>
+                            <td class="py-2 px-4">2025-05-01 00:52:02</td>
+                            <td class="py-2 px-4">Machine #3001, Serial: DX152451V, Area: Slots, Bank: BK05, Game: 5 Dragons Pearls, Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">98</td>
+                            <td class="py-2 px-4">Ppochi 2024 - SAT-SUN 33 times (16-2)</td>
+                            <td class="py-2 px-4">2025-04-28 00:55:01</td>
+                            <td class="py-2 px-4">Machine #1025, Serial: DX144351V, Area: Slots, Bank: BK04, Game: 5 Dragons Pearls, Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">97</td>
+                            <td class="py-2 px-4">Ppochi 2024 -Mon-Fri-18 times (16-2)</td>
+                            <td class="py-2 px-4">2025-05-01 00:56:01</td>
+                            <td class="py-2 px-4">Machine #3018, Serial: 3018, Area: Slots, Bank: BK07, Game: 5 Dragons Ultra, Manufacturer: Aristocrat</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 px-4">0</td>
+                            <td class="py-2 px-4">Unknown</td>
+                            <td class="py-2 px-4">2025-04-29 23:46:02</td>
+                            <td class="py-2 px-4">No machine details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Store jackpot hits
+        let jackpotHits = [];
+
+        // Function to format timestamp
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp);
+            return date.toISOString().replace('T', ' ').substring(0, 19);
+        }
+
+        // Function to update the jackpot hits table
+        function updateJackpotHitsTable() {
+            const tableBody = document.getElementById('jackpot-hits-table');
+            tableBody.innerHTML = ''; // Clear existing rows
+
+            // Group hits by jackpot name
+            const hitsByJackpot = {};
+            jackpotHits.forEach(hit => {
+                const jackpotName = hit.Jackpot.Name;
+                if (!hitsByJackpot[jackpotName]) {
+                    hitsByJackpot[jackpotName] = [];
+                }
+                hitsByJackpot[jackpotName].push(hit);
+            });
+
+            // Sort hits for each jackpot by time (descending) and take top 2
+            Object.keys(hitsByJackpot).forEach(jackpotName => {
+                hitsByJackpot[jackpotName].sort((a, b) => new Date(b.Time) - new Date(a.Time));
+                hitsByJackpot[jackpotName] = hitsByJackpot[jackpotName].slice(0, 2);
+            });
+
+            // Flatten and sort by time for display
+            const sortedHits = Object.values(hitsByJackpot).flat().sort((a, b) => new Date(b.Time) - new Date(a.Time));
+
+            // Render rows
+            sortedHits.forEach(hit => {
+                const row = document.createElement('tr');
+                row.className = 'border-b';
+                row.innerHTML = `
+                    <td class="py-2 px-4">${hit.Jackpot.Id}</td>
+                    <td class="py-2 px-4">${hit.Jackpot.Name}</td>
+                    <td class="py-2 px-4">${hit.Amount.toFixed(2)}</td>
+                    <td class="py-2 px-4">${formatTimestamp(hit.Time)}</td>
+                    <td class="py-2 px-4">Machine #${hit.Machine.MachineNumber}, Serial: ${hit.Machine.SerialNumber}, Area: ${hit.Machine.Area}, Bank: ${hit.Machine.Bank}, Game: ${hit.Machine.CabinetGameTheme}, Manufacturer: ${hit.Machine.MachineManufacturer}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // WebSocket connection to Node.js server
+        const ws = new WebSocket('ws://localhost:8080/ws');
+
+        ws.onopen = () => {
+            console.log('Connected to Node.js WebSocket server');
+        };
+
+        ws.onmessage = (event) => {
+            const hit = JSON.parse(event.data);
+            jackpotHits.push(hit);
+            document.getElementById('broadcast-datetime').textContent = `Broadcast DateTime: ${formatTimestamp(new Date())}`;
+            updateJackpotHitsTable();
+        };
+
+        ws.onclose = () => {
+            console.log('Disconnected from Node.js WebSocket server');
+        };
+
+        ws.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initial table rendering (empty until data arrives)
+            updateJackpotHitsTable();
+        });
+    </script>
+</body>
+</html>
