@@ -1,12 +1,23 @@
 "use strict";
 const mongoose = require("mongoose");
 const AutoIncrementFactory = require("mongoose-sequence");
-const username = "lehuudan99";
-const password = "iYMlvnLT5GxsNL0f";
-const database = "JPDesktop1";
-const URL = `mongodb+srv://${username}:${password}@cluster0.ys8vqbz.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+// const username = "lehuudan99";
+// const password = "iYMlvnLT5GxsNL0f";
+// const database = "JPDesktop1";
+// const URL = `mongodb+srv://${username}:${password}@cluster0.ys8vqbz.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+
+const username = "jrhuudan4_db_user";
+const password = "cnqkQNXf6LSYDMEx";
+const database = "JPDesktop";
+const URL = `mongodb+srv://${username}:${password}@cluster0.78cwhqp.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+
+
+
 let lastConnectionEvent = Date.now(); // ⏱️ Track last event time
-const DB_OPTIONS = {};
+const DB_OPTIONS = {
+  serverSelectionTimeoutMS: 30000, // 30s
+  socketTimeoutMS: 60000,          // 60s
+};
 let AutoIncrement;
 
 async function connectDBSUB() {

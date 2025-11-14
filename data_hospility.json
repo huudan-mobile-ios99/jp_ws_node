@@ -146,3 +146,434 @@ customer data:
         </FindCustomersResponse>
     </s:Body>
 </s:Envelope>
+
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetEmployeesResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <GetEmployeesResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+                <a:Employees>
+                    <a:Employee>
+                        <a:AuthorisationAmount>100000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>2023198</a:CardNumber>
+                        <a:Id>1</a:Id>
+                        <a:Name>Intelligent Gaming</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>11</a:Id>
+                        <a:Name>Lucky Lâm Ngọc Bảo Trân</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>12</a:Id>
+                        <a:Name>Hari Nguyễn Ngọc Anh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>13</a:Id>
+                        <a:Name>Autumn Phạm Thị Thúy Vy</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>14</a:Id>
+                        <a:Name>Milk Nguyễn Ngọc Trúc Phương</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>15</a:Id>
+                        <a:Name>Min Trần Thị Kim Hoàn</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>16</a:Id>
+                        <a:Name>Maya Đào Trần Thanh Tuyền</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>17</a:Id>
+                        <a:Name>Pooh Trần Thị Tuyết Dung</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>18</a:Id>
+                        <a:Name>Alice Trần Hồng Ngân</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>19</a:Id>
+                        <a:Name>Hera Lê Thị Hải Hà</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>20</a:Id>
+                        <a:Name>Krystal Bùi Thị Minh Tâm</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>21</a:Id>
+                        <a:Name>Jessica Võ Thị Minh Phượng</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>22</a:Id>
+                        <a:Name>Ginny Phan Thị Thúc Đoan</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>23</a:Id>
+                        <a:Name>Yumi Phạm Nguyễn Phương Vy</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>24</a:Id>
+                        <a:Name>May Nguyễn Đặng Như Quỳnh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>26</a:Id>
+                        <a:Name>Minnie Nguyễn Thái Kiều My</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>27</a:Id>
+                        <a:Name>Ariel Nguyễn Thị Kim Linh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>29</a:Id>
+                        <a:Name>Helen Nguyễn Thị Bích Nhi</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>31</a:Id>
+                        <a:Name>Stella Trần Thanh Thúy</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>37</a:Id>
+                        <a:Name>Vivian Nguyễn Vân Khanh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>65</a:Id>
+                        <a:Name>Tee Duong</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>80</a:Id>
+                        <a:Name>Tia Hoang Luong Bao Chau</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>100000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>85</a:Id>
+                        <a:Name>Jione Bang</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>100000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>89</a:Id>
+                        <a:Name>Lee Myunghyung</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>100000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>90</a:Id>
+                        <a:Name>Young Yoo Yoo Seung Woo</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>109</a:Id>
+                        <a:Name>Gr All</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>110</a:Id>
+                        <a:Name>Diep Garbiel</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>119</a:Id>
+                        <a:Name>Debby Ngô Bích Trâm</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>122</a:Id>
+                        <a:Name>Laura Vũ Mộng Huyền Trinh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>124</a:Id>
+                        <a:Name>Kate Phạm Huỳnh Ngọc Hòa</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>132</a:Id>
+                        <a:Name>Grassia Pham Ngoc Xuan Thao</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>133</a:Id>
+                        <a:Name>Juliet Phan Thi Kim Hien</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>134</a:Id>
+                        <a:Name>Janet Hoang Thi Ngoc Bich</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>137</a:Id>
+                        <a:Name>Andrea Ngo Le Thu An</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>138</a:Id>
+                        <a:Name>Miley Nguyen Hoang Bao Tran</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>142</a:Id>
+                        <a:Name>Jasmine Tran Nguyen Anh Thu</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>144</a:Id>
+                        <a:Name>Kamy Lê Hoàng Kim Loan</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>145</a:Id>
+                        <a:Name>Anny Nguyễn Tường Phương Uyên</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>150</a:Id>
+                        <a:Name>Pixie Trần Thị Hồng Phúc</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>151</a:Id>
+                        <a:Name>Daisy Trương Thị Hồng Hạnh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>152</a:Id>
+                        <a:Name>Phạm Thị Yến Nhi Jena</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>153</a:Id>
+                        <a:Name>Amber Vu Thanh Van</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>156</a:Id>
+                        <a:Name>Cindy Nguyen Ngoc Thuy Tram</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>157</a:Id>
+                        <a:Name>Juan Sỳ Tắc Kín</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>162</a:Id>
+                        <a:Name>Judie Lý Khải Minh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>100000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>10036351</a:CardNumber>
+                        <a:Id>163</a:Id>
+                        <a:Name>Tran Tien</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>169</a:Id>
+                        <a:Name>Jay Nguyen Dong Quy</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>178</a:Id>
+                        <a:Name>Joy Hoang Anh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>182</a:Id>
+                        <a:Name>Lily Nhu Y</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>218</a:Id>
+                        <a:Name>Vo Hanh Tram Anh</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>242</a:Id>
+                        <a:Name>Thuy Duong Truong</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>252</a:Id>
+                        <a:Name>Test Test</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>255</a:Id>
+                        <a:Name>Tram Anh Steffie</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>269</a:Id>
+                        <a:Name>Phung Gia Han</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>272</a:Id>
+                        <a:Name>Mun Julia</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>273</a:Id>
+                        <a:Name>Bui Thi Phuong Trang</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>282</a:Id>
+                        <a:Name>Yoon Bella</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>299</a:Id>
+                        <a:Name>Lee Joonhyeong</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>303</a:Id>
+                        <a:Name>Nguyen Thi Cam My</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>318</a:Id>
+                        <a:Name>Grace Kim</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>10044782</a:CardNumber>
+                        <a:Id>327</a:Id>
+                        <a:Name>Vo Nguyen Huy</a:Name>
+                    </a:Employee>
+                    <a:Employee>
+                        <a:AuthorisationAmount>20000.0000</a:AuthorisationAmount>
+                        <a:CardNumber>0</a:CardNumber>
+                        <a:Id>340</a:Id>
+                        <a:Name>Lee Jae Hwa</a:Name>
+                    </a:Employee>
+                </a:Employees>
+            </GetEmployeesResult>
+        </GetEmployeesResponse>
+    </s:Body>
+</s:Envelope>
+
+
+
+
+
+
+///LOYAL REDEEM
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <LoyaltyRedemption xmlns="http://www.IntelligentGaming.co.uk">
+            <!-- Optional -->
+            <request>
+                <ComputerName xmlns="IG.Cms.Gateway.DataContracts">Floor</ComputerName>
+                <!-- Optional -->
+                <Casino xmlns="IG.Cms.Gateway.DataContracts">
+                    <Id>3</Id>
+                    <Name>Vegas Club</Name>
+                </Casino>
+                <Comment xmlns="IG.Cms.Gateway.DataContracts">test 12.9.25</Comment>
+                <Cost xmlns="IG.Cms.Gateway.DataContracts">1.0</Cost>
+                <CustomerNumber xmlns="IG.Cms.Gateway.DataContracts">1</CustomerNumber>
+                <Item xmlns="IG.Cms.Gateway.DataContracts">
+                    <FixedPrice>true</FixedPrice>
+                    <Id>28</Id>
+                    <Name>$50 Test</Name>
+                    <Redeemable>true</Redeemable>
+                </Item>
+                <Quantity xmlns="IG.Cms.Gateway.DataContracts">1</Quantity>
+                <Reference xmlns="IG.Cms.Gateway.DataContracts"></Reference>
+                <SuppressVisit xmlns="IG.Cms.Gateway.DataContracts">true</SuppressVisit>
+            </request>
+        </LoyaltyRedemption>
+    </Body>
+</Envelope>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <LoyaltyRedemptionResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <LoyaltyRedemptionResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+            </LoyaltyRedemptionResult>
+        </LoyaltyRedemptionResponse>
+    </s:Body>
+</s:Envelope>

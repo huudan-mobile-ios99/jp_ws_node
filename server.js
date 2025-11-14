@@ -2,7 +2,6 @@
 
 const express = require('express');
 const { parseStringPromise } = require('xml2js');
-
 const app = express();
 const path = require('path');
 const cors = require('cors');
@@ -106,67 +105,106 @@ async function connectWebSocket() {
         reconnectAttempts = 0;
     });
 
-    wsClient.on('message', async (data) => {
-        const startTime = performance.now();
-        try {
-            const xmlString = data.toString();
-            const parsed = parser.parse(xmlString);
-            // console.log(parsed);
-            const informationBroadcast = parsed.InformationBroadcast || {};
+   wsClient.on("message", async (data) => {
+    const startTime = performance.now();
+    try {
+        const xmlString = data.toString();
+        const parsed = parser.parse(xmlString);
 
-            if (informationBroadcast.JackpotList) {
-                const jackpotListXml = informationBroadcast.JackpotList;
-                const parsedJackpotList = parser.parse(`<Root>${jackpotListXml}</Root>`);
-                const jackpots = Array.isArray(parsedJackpotList.Root.Jackpot)
-                    ? parsedJackpotList.Root.Jackpot
-                    : [parsedJackpotList.Root.Jackpot].filter(Boolean);
+        const informationBroadcast = parsed.InformationBroadcast || {};
 
-                // Prepare jackpot data for MongoDB
-                const jackpotData = jackpots.map(jackpot => ({
-                    jackpotId: jackpot['@Id'],
-                    jackpotName: jackpot['@Name'],
-                    value: parseFloat(jackpot['@Value']),
-                }));
+        if (informationBroadcast.JackpotList) {
+            const jackpotListXml = informationBroadcast.JackpotList;
+            const parsedJackpotList = parser.parse(`<Root>${jackpotListXml}</Root>`);
 
-                // Save to MongoDB
-                try {
-                    const newRecord = new IfModel({
-                       jackpots: jackpotData,
-                        timestamp: new Date(),
-                    });
-                    await newRecord.save();
-                    console.log('JP saved:', {
-                        jackpots: jackpotData,
-                        timestamp: newRecord.timestamp,
-                    });
-                } catch (dbError) {
-                    console.error('Error save jp:', dbError.message);
-                }
+            const jackpots = Array.isArray(parsedJackpotList.Root.Jackpot)
+                ? parsedJackpotList.Root.Jackpot
+                : [parsedJackpotList.Root.Jackpot].filter(Boolean);
+
+            // Prepare jackpot data
+            let jackpotData = jackpots.map(jackpot => ({
+                jackpotId: jackpot["@Id"],
+                jackpotName: jackpot["@Name"],
+                // store original string and number
+                rawValue: jackpot["@Value"],
+                value: Number(jackpot["@Value"])
+            }));
+
+            // ----------------------------
+            // ✅ FIXED: SAFEST INCREMENT LOGIC
+            // ----------------------------
+            const lastRecord = await IfModel.findOne().sort({ timestamp: -1 });
+            if (lastRecord) {
+                jackpotData.forEach(jp => {
+                    const prevJP = lastRecord.jackpots.find(j => j.jackpotId === jp.jackpotId);
+
+                    if (prevJP) {
+                        const currValue = Number(jp.rawValue);
+                        const prevValue = prevJP.value;
+
+                        if (currValue === prevValue) {
+                            // Increment the last digit
+                            let strVal = currValue.toFixed(8); // 8 decimal places
+                            let [intPart, decPart] = strVal.split(".");
+
+                            let lastDigit = parseInt(decPart[decPart.length - 1]);
+                            lastDigit = (lastDigit + 1) % 10;
+
+                            decPart = decPart.slice(0, -1) + lastDigit.toString();
+                            jp.value = parseFloat(`${intPart}.${decPart}`);
+                        } else {
+                            jp.value = currValue; // new number from WS
+                        }
+                    }
+                });
+            } else {
+                // First ever record, just save as-is
+                jackpotData.forEach(jp => {
+                    jp.value = Number(jp.rawValue);
+                });
             }
-                const hits = informationBroadcast.LastJackpotHits;
-                // If it’s a string → just log
-                if (typeof hits === "string") {
-                    // console.log("LastJackpotHits (raw XML):", hits);
-                }
-                // If it’s an object → log as JSON
-                else if (typeof hits === "object" && !Array.isArray(hits)) {
-                    // console.log("LastJackpotHits (object):", JSON.stringify(hits, null, 2));
-                }
-                // If it’s an array → loop
-                else if (Array.isArray(hits)) {
-                    hits.forEach(hit => {
-                        // console.log("Hit:", JSON.stringify(hit, null, 2));
-                    });
-                }
-            //log hotseat
-            if ( informationBroadcast.LastHotSeatHits) {
-                // console.log(informationBroadcast.LastHotSeatHits);
-            }
+            // ----------------------------
+            // SAVE to MongoDB
+            // ----------------------------
+            try {
+                const newRecord = new IfModel({
+                    jackpots: jackpotData.map(j => ({
+                        jackpotId: j.jackpotId,
+                        jackpotName: j.jackpotName,
+                        value: j.value
+                    })),
+                    timestamp: new Date(),
+                });
 
-        } catch (error) {
-            console.error('Error processing WebSocket message:', error);
+                await newRecord.save();
+
+                console.log("JP saved:", {
+                    jackpots: jackpotData,
+                    timestamp: newRecord.timestamp,
+                });
+            } catch (dbError) {
+                console.error("Error save jp:", dbError.message);
+            }
         }
-    });
+
+        // Log Hotseat & Hits (unchanged)
+        const hits = informationBroadcast.LastJackpotHits;
+
+        if (typeof hits === "string") {
+            // raw XML
+        } else if (typeof hits === "object" && !Array.isArray(hits)) {
+            // JSON object
+        } else if (Array.isArray(hits)) {
+            hits.forEach(hit => {});
+        }
+
+        if (informationBroadcast.LastHotSeatHits) {
+            // console.log(informationBroadcast.LastHotSeatHits);
+        }
+    } catch (error) {
+        console.error("Error processing WebSocket message:", error);
+    }
+});
 
     wsClient.on('close', () => {
         console.log('WebSocket connection closed');

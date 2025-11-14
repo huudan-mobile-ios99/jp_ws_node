@@ -1,0 +1,149 @@
+1. loyalty redeemtion
+
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <LoyaltyRedemption xmlns="http://www.IntelligentGaming.co.uk">
+            <!-- Optional -->
+            <request>
+                <ComputerName xmlns="IG.Cms.Gateway.DataContracts">Floor</ComputerName>
+                <!-- Optional -->
+                <Casino xmlns="IG.Cms.Gateway.DataContracts">
+                    <Id>3</Id>
+                    <Name>Vegas Club</Name>
+                </Casino>
+                <Comment xmlns="IG.Cms.Gateway.DataContracts">test 12.9.25</Comment>
+                <Cost xmlns="IG.Cms.Gateway.DataContracts">1.0</Cost>
+                <CustomerNumber xmlns="IG.Cms.Gateway.DataContracts">1</CustomerNumber>
+                <Item xmlns="IG.Cms.Gateway.DataContracts">
+                    <FixedPrice>true</FixedPrice>
+                    <Id>11</Id>
+                    <Name>GR -Spa Voucher</Name>
+                    <Redeemable>true</Redeemable>
+                </Item>
+                <Quantity xmlns="IG.Cms.Gateway.DataContracts">1</Quantity>
+                <Reference xmlns="IG.Cms.Gateway.DataContracts"></Reference>
+                <SuppressVisit xmlns="IG.Cms.Gateway.DataContracts">true</SuppressVisit>
+            </request>
+        </LoyaltyRedemption>
+    </Body>
+</Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <LoyaltyRedemptionResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <LoyaltyRedemptionResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+            </LoyaltyRedemptionResult>
+        </LoyaltyRedemptionResponse>
+    </s:Body>
+</s:Envelope>
+
+
+
+
+
+
+
+
+2. bonus redemtion
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <BonusRedemptionResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <BonusRedemptionResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason>Enhanced odds bonus is not in operation.</a:FailureReason>
+                <a:Success>false</a:Success>
+            </BonusRedemptionResult>
+        </BonusRedemptionResponse>
+    </s:Body>
+</s:Envelope>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <BonusRedemption xmlns="http://www.IntelligentGaming.co.uk">
+            <!-- Optional -->
+            <request>
+                <ComputerName xmlns="IG.Cms.Gateway.DataContracts">Floor</ComputerName>
+                <!-- Optional -->
+                <Casino xmlns="IG.Cms.Gateway.DataContracts">
+                    <Id>3</Id>
+                    <Name>Vegas Club</Name>
+                </Casino>
+                <Comment xmlns="IG.Cms.Gateway.DataContracts">test 9.12.25 bnus</Comment>
+                <Cost xmlns="IG.Cms.Gateway.DataContracts">1.0</Cost>
+                <CustomerNumber xmlns="IG.Cms.Gateway.DataContracts">1</CustomerNumber>
+                <Item xmlns="IG.Cms.Gateway.DataContracts">
+                    <FixedPrice>true</FixedPrice>
+                    <Id>11</Id>
+                    <Name>GR -Spa Voucher</Name>
+                    <Redeemable>true</Redeemable>
+                </Item>
+                <Quantity xmlns="IG.Cms.Gateway.DataContracts">1</Quantity>
+                <Reference xmlns="IG.Cms.Gateway.DataContracts"></Reference>
+                <SuppressVisit xmlns="IG.Cms.Gateway.DataContracts">false</SuppressVisit>
+            </request>
+        </BonusRedemption>
+    </Body>
+</Envelope>
+
+
+
+
+3. hospility transaction
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <HospitalityTransaction xmlns="http://www.IntelligentGaming.co.uk">
+            <!-- Optional -->
+            <request>
+                <ComputerName xmlns="IG.Cms.Gateway.DataContracts">Floor</ComputerName>
+                <!-- Optional -->
+                <Casino xmlns="IG.Cms.Gateway.DataContracts">
+                    <Id>3</Id>
+                    <Name>Vegas Club</Name>
+                </Casino>
+                <CasinoPaid xmlns="IG.Cms.Gateway.DataContracts">1</CasinoPaid>
+                <Comment xmlns="IG.Cms.Gateway.DataContracts">testing</Comment>
+                <CustomerNumber xmlns="IG.Cms.Gateway.DataContracts">1</CustomerNumber>
+                <CustomerPaid xmlns="IG.Cms.Gateway.DataContracts">1</CustomerPaid>
+                <!-- Optional -->
+                <Employee xmlns="IG.Cms.Gateway.DataContracts">
+                    <AuthorisationAmount>20000.0000</AuthorisationAmount>
+                    <CardNumber>0</CardNumber>
+                    <Id>109</Id>
+                    <Name>Gr All</Name>
+                </Employee>
+                <GamingDate xmlns="IG.Cms.Gateway.DataContracts">2025-09-11T15:20:00</GamingDate>
+                <Item xmlns="IG.Cms.Gateway.DataContracts">
+                    <FixedPrice>true</FixedPrice>
+                    <Id>11</Id>
+                    <Name>GR -Spa Voucher</Name>
+                    <Redeemable>true</Redeemable>
+                </Item>
+                <Reference xmlns="IG.Cms.Gateway.DataContracts"></Reference>
+            </request>
+        </HospitalityTransaction>
+    </Body>
+</Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <HospitalityTransactionResponse xmlns="http://www.IntelligentGaming.co.uk">
+            <HospitalityTransactionResult xmlns:a="IG.Cms.Gateway.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:FailureReason i:nil="true"/>
+                <a:Success>true</a:Success>
+            </HospitalityTransactionResult>
+        </HospitalityTransactionResponse>
+    </s:Body>
+</s:Envelope>
+
+
+
+
+
+
+const username = "huudanjr99";
+const password = "YGKIeQOIzbqqB1kb";
+const database = "JPDesktop";
+const URL = `mongodb+srv://${username}:${password}@cluster0.qfxa2ad.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
