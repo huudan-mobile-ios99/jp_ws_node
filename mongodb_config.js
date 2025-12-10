@@ -1,17 +1,28 @@
 "use strict";
 const mongoose = require("mongoose");
 const AutoIncrementFactory = require("mongoose-sequence");
-// const username = "lehuudan99";
-// const password = "iYMlvnLT5GxsNL0f";
-// const database = "JPDesktop1";
-// const URL = `mongodb+srv://${username}:${password}@cluster0.ys8vqbz.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
 
-const username = "jrhuudan4_db_user";
-const password = "cnqkQNXf6LSYDMEx";
-const database = "JPDesktop";
-const URL = `mongodb+srv://${username}:${password}@cluster0.78cwhqp.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+// const username = "huudanstorage_db_user";
+// const password = "VouZvBqdKLuxiVtS";
+// const database = "JPDesktop";
+// const URL = `mongodb+srv://${username}:${password}@cluster0.qpzcnil.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+// const username = "huudanjr99";
+// const password = "YGKIeQOIzbqqB1kb";
+// const database = "JPDesktop";
+// const URL = `mongodb+srv://${username}:${password}@cluster0.qfxa2ad.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
 
 
+
+const username = "lehuudan99";
+const password = "iYMlvnLT5GxsNL0f";
+const database = "JPDesktop1";
+const URL = `mongodb+srv://${username}:${password}@cluster0.ys8vqbz.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+
+
+// const username = "LeHuuDan99";
+// const password = "3lyIxDXEzwCtzw2i";
+// const database = "JPDesktop";
+// const URL = `mongodb+srv://${username}:${password}@clustervegas.ym3zd.mongodb.net/${database}?retryWrites=true&w=majority`;
 
 let lastConnectionEvent = Date.now(); // ⏱️ Track last event time
 const DB_OPTIONS = {
@@ -25,7 +36,7 @@ async function connectDBSUB() {
     // 👇 ACTUALLY CONNECT TO DATABASE
    const mongooseSub= await mongoose.connect(URL, DB_OPTIONS);
     // 👇 INIT AUTO INCREMENT PLUGIN (after connect)
-    console.log("✅ Connected DBSUB");
+    console.log("✅ Connected 6:DBSUB");
 
     // Optional: Start a heartbeat ping
     setInterval(async () => {
